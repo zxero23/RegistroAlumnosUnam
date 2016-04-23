@@ -130,15 +130,15 @@ public class Busqueda extends javax.swing.JFrame {
         labelFoto.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         labelFoto.setText("FOTO");
 
-        labelApellido.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        labelApellido.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
         labelApellido.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         labelApellido.setText("APELLID");
 
-        labelNombre.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        labelNombre.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
         labelNombre.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         labelNombre.setText("NOM");
 
-        labelLegajo.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        labelLegajo.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
         labelLegajo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         labelLegajo.setText("LEGAJ");
 
@@ -178,7 +178,7 @@ public class Busqueda extends javax.swing.JFrame {
                             .addComponent(labelApellido, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(labelLegajo, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(labelFoto, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(labelFoto, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap())))
         );
         jPanel2Layout.setVerticalGroup(
@@ -199,8 +199,8 @@ public class Busqueda extends javax.swing.JFrame {
                             .addComponent(labelNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(45, 45, 45)
                         .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(labelFoto, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(50, 50, 50)
+                    .addComponent(labelFoto, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton2)
                     .addComponent(jButton3)
@@ -258,8 +258,8 @@ public class Busqueda extends javax.swing.JFrame {
             Datos alumno = entitymanager.find( Datos.class, Integer.parseInt(this.campoBuscar.getText()) );
             System.out.println("employee ID = "+alumno.getFoto());
             Image imagen=ConvertirImagen(alumno.getFoto());
-            double alto = imagen.getHeight(null) / Math.ceil(imagen.getHeight(null)/300f) ;
-            double ancho =imagen.getWidth(null) / Math.ceil(imagen.getWidth(null)/320f) ;
+            double alto = 216;
+            double ancho =270;
             Icon icon = new ImageIcon(imagen.getScaledInstance((int)ancho, (int)alto,Image.SCALE_AREA_AVERAGING));  
             labelFoto.setIcon(icon);
             this.labelNombre.setText(alumno.getNombre());
