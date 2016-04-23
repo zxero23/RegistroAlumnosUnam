@@ -16,17 +16,24 @@ public final class Mensajes {
  /**
   * Lanza un dialogo de mensaje de una línea:
   */
- 
+ String mensaje;   
+ public void Mensajes(String msj){
+     this.mensaje=msj;
+ }
+ public void setMsj(String msj){
+     this.mensaje=msj;
+     
+ }
     
- public static void lanzarMensaje(){
+ public void lanzarMensaje(){
   //En la siguiente línea está la magia (es lo que muestra el mensaje).
   
   
-  JOptionPane.showMessageDialog(null, "aaaaaa");
+  JOptionPane.showMessageDialog(null, mensaje);
  }
  
- public static void main(String args){
-  lanzarMensaje();
- }
+
+
+    
  
 }
