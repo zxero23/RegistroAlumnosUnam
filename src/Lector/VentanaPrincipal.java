@@ -420,6 +420,7 @@ public static String TEMPLATE_PROPERTY = "template";
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
         Busqueda buscar=new Busqueda();
+        buscar.setLocationRelativeTo(null);
         buscar.setVisible(true);
     }//GEN-LAST:event_jButton1MouseClicked
 
@@ -461,8 +462,10 @@ public static String TEMPLATE_PROPERTY = "template";
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
+            VentanaPrincipal ventana=new VentanaPrincipal();
             public void run() {
-                new VentanaPrincipal().setVisible(true);
+                ventana.setLocationRelativeTo(null);
+                ventana.setVisible(true);
             }
         });
     }
