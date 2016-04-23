@@ -16,6 +16,7 @@ import com.sun.awt.AWTUtilities;
 import java.awt.Shape; 
 import java.awt.geom.RoundRectangle2D; 
 import Persistencia.Datos;
+import Utilidades.asd;
 import com.digitalpersona.onetouch.DPFPDataPurpose;
 import com.digitalpersona.onetouch.DPFPFeatureSet;
 import com.digitalpersona.onetouch.DPFPGlobal;
@@ -90,7 +91,8 @@ public static String TEMPLATE_PROPERTY = "template";
     
     public VentanaPrincipal() {
         initComponents();
-      
+        asd panel = new asd();
+        this.add(panel);
  
         
 
@@ -123,10 +125,10 @@ public static String TEMPLATE_PROPERTY = "template";
         jPanel4 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         txtArea = new javax.swing.JTextArea();
-        jPanel5 = new javax.swing.JPanel();
+        jPanel5 = new asd();
         jButton2 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jPanel6 = new javax.swing.JPanel();
+        jPanel6 = new asd();
         botonAgregar = new javax.swing.JButton();
 
         javax.swing.GroupLayout jFrame1Layout = new javax.swing.GroupLayout(jFrame1.getContentPane());
@@ -358,7 +360,7 @@ public static String TEMPLATE_PROPERTY = "template";
                         .addComponent(botonAgregar)
                         .addGap(219, 219, 219)
                         .addComponent(jButton1)
-                        .addGap(100, 100, 100))
+                        .addGap(115, 115, 115))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)

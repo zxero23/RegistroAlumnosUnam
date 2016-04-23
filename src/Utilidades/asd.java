@@ -25,8 +25,8 @@ public class asd extends JPanel {
         g2d.setRenderingHint(RenderingHints.KEY_RENDERING, RenderingHints.VALUE_RENDER_QUALITY);
         int w = getWidth();
         int h = getHeight();
-        Color color1 = Color.RED;
-        Color color2 = Color.GREEN;
+        Color color1 = Color.LIGHT_GRAY;
+        Color color2 = Color.WHITE;
         GradientPaint gp = new GradientPaint(0, 0, color1, 0, h, color2);
         g2d.setPaint(gp);
         g2d.fillRect(0, 0, w, h);
@@ -39,7 +39,7 @@ public class asd extends JPanel {
                 JFrame frame = new JFrame();
                 asd panel = new asd();
                 frame.add(panel);
-                frame.setSize(200, 200);
+                frame.setSize(861, 637);
                 frame.setLocationRelativeTo(null);
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 frame.setVisible(true);

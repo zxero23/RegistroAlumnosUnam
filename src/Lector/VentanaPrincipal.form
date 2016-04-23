@@ -60,7 +60,7 @@
                       <Component id="botonAgregar" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="219" max="-2" attributes="0"/>
                       <Component id="jButton1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="100" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="115" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -386,6 +386,9 @@
           </Border>
         </Property>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new asd()"/>
+      </AuxValues>
 
       <Layout>
         <DimensionLayout dim="0">
@@ -438,6 +441,9 @@
           </Border>
         </Property>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new asd()"/>
+      </AuxValues>
 
       <Layout>
         <DimensionLayout dim="0">
